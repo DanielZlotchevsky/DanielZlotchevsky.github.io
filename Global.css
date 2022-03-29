@@ -1,0 +1,47 @@
+.topnav {
+    background-color: black;
+    height: 60px;
+    position: relative;
+    text-align: center;
+}
+
+@supports (position: sticky) {
+    .topnav {
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+    }
+}
+
+.logo {
+    position: relative;
+    width: 40px;
+    top: 7.5px;
+    float: right;
+}
+
+.nav {
+    position: relative;
+    display: inline-block;
+}
+
+.topnav a {
+    position: relative;
+    top: -3px;
+    color: gray;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 26px;
+    transition: transform .2s ease-in-out;
+}
+
+
+.nav:hover{
+    color: aqua;
+    transform: translateY(-5px);
+}
+
+.topnav a.active {
+    color: white;
+}
+

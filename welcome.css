@@ -9,8 +9,92 @@ body {
     width: 100%;
 }
 
-/*------------------------------------------Welcome message------------------------------------------*/
+/*------------------------------------------Navbar------------------------------------------*/
 
+
+/* #region Navbar */
+.topnav {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+@supports (position: sticky) {
+    .topnav {
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+    }
+}
+
+.logo {
+    position: relative;
+    width: 40px;
+    top: 7.5px;
+    float: right;
+}
+
+.nav {
+    position: relative;
+    display: inline-block;
+}
+
+.topnav a {
+    position: relative;
+    top: -3px;
+    color: gray;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 26px;
+    transition: transform .2s ease-in-out;
+}
+
+.nav:hover{
+    color: aqua;
+    transform: translateY(-5px);
+}
+
+.topnav a.active {
+    color: white;
+}
+
+/* #endregion Navbar */
+
+
+/*------------------------------------------Footer------------------------------------------*/
+
+
+/* #region Header */
+.header {
+    position: fixed;
+    width: 100%;
+}
+.header-image {
+    position: relative;
+    width: 100%;
+}
+/* #endregion Header */
+
+/* #region Footer */
+.Footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    margin-top: 10px;
+    background-color: #000;
+    height: 30px;
+    width: 100%;
+    z-index: 1;
+}
+/* #endregion Footer */
+
+
+/*------------------------------------------Main message------------------------------------------*/
+
+
+/* #region Letters */
 .text-container {
     width: 100%;
     position: absolute;
@@ -69,7 +153,9 @@ body {
     position: relative;
     animation: text8 4.4s 1;
 }
+/* #endregion letters */
 
+/* #region Keyframes */
 @keyframes text1 {
     
     0%{
@@ -134,8 +220,13 @@ body {
         transform: translateY(-103px);
     }
 }
+/* #endregion KeyFrames */
+
 
 /*------------------------------------------Intro Text to Video------------------------------------------*/
+
+
+/* #region Video Intro Text */
 .Dan-container {
     width: 100%;
     position: relative;
@@ -181,7 +272,9 @@ body {
         font-family: 'Secular One', sans-serif;
         animation: intro2 2s 1;
 }
+/* #endregion Video Intro Text */
 
+/* #region Video Intro KeyFrames */
 @keyframes intro1 {
     0%{
         opacity: 0;
@@ -197,11 +290,13 @@ body {
         transform: translateX(500px);
     }
 }
-
-
+/* #endregion Video Intro KeyFrames */
 
 
 /*------------------------------------------Video embedding------------------------------------------*/
+
+
+/* #region Video */
 .video {
     position: relative;
     top: 275px;
@@ -209,8 +304,13 @@ body {
     transform: translate(-50%, -50%);
     object-position: center;
 }
+/* #endregion Video */
 
-/*------------------------------------------Card 1------------------------------------------*/
+
+/*------------------------------------------Welcome Page Cards------------------------------------------*/
+
+
+/* #region Card One */
 .card-container {
     position: absolute;
     background-color: rgb(0, 0, 0);
@@ -263,10 +363,9 @@ body {
     text-align: center;
     left: 25%;
 }
+/* #endregion Card One */
 
-/*------------------------------------------Card 2------------------------------------------*/
-
-
+/* #region Card Two */
 .card2-container {
     position: absolute;
     background-color: rgb(0, 0, 0);
@@ -324,25 +423,28 @@ body {
     width: 80px;
     animation: rotating 3s infinite;
 }
+/* #endregion Card Two */
 
+/* #region Card Two Keyframes */
 @keyframes rotating {
     from {
-      -ms-transform: rotateY(0deg);
-      -moz-transform: rotateY(0deg);
-      -webkit-transform: rotateY(0deg);
-      -o-transform: rotateY(0deg);
-      transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);
     }
     to {
-      -ms-transform: rotateY(360deg);
-      -moz-transform: rotateY(360deg);
-      -webkit-transform: rotateY(360deg);
-      -o-transform: rotateY(360deg);
-      transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);
     }
-  }
+}
+/* #endregion Card Two Keyframes */
 
-/*------------------------------------------Card 3------------------------------------------*/
+/* #region Card Three */
 .card3-container {
     position: absolute;
     background-color: rgb(0, 0, 0);
@@ -358,3 +460,198 @@ body {
     color: white;
     top: 500px;
 }
+/* #endregion Card Three */
+
+
+/*------------------------------------------Project Intro message------------------------------------------*/
+
+
+/* #region Project Intro */
+.project-container {
+    position: absolute; 
+    width: 50%;
+    top: 45%;
+    left: 25%;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.project-intro {
+    position: relative;
+    color: white;
+}
+#header {
+    position: relative;
+    left: 22.5%;
+    font-size: 76px;
+}
+#para {
+    font-size: 24px;
+}
+/* #endregion Project Intro */
+
+
+/*------------------------------------------Project cards------------------------------------------*/
+
+
+/* #region Card One */
+.projectCard1-container {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border: 1px gray solid;
+    top: 120%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.cardProj1-body {
+    position: relative;
+    height: 500px;
+
+}
+#projPac {
+    position: absolute;
+    height: 200px;
+    left: 50px;
+    top: 50px;
+}
+.cardProj1-title {
+    position: relative;
+    color: white;
+    top: 300px;
+    font-size: 36px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cardProj1-text {
+    position: relative;
+    color: white;
+    top: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.btn {
+    position: relative;
+    top: 295px;
+    left: 35%;
+    margin-bottom: 5px;
+}
+/* #endregion Card One */
+
+/* #region Card Two */
+.projectCard2-container {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border: 1px gray solid;
+    top: 120%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.cardProj2-body {
+    position: relative;
+    height: 500px;
+}
+#projBus {
+    position: absolute;
+    height: 200px;
+    left: 35px;
+    top: 50px;
+}
+.cardProj2-title {
+    position: relative;
+    color: white;
+    top: 300px;
+    font-size: 36px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cardProj2-text {
+    position: relative;
+    color: white;
+    top: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#Busbtn {
+    position: relative;
+    left: 30%;
+}
+/* #endregion Card Two */
+
+/* #region Card Three */
+.projectCard3-container {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border: 1px gray solid;
+    top: 120%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.cardProj3-body {
+    position: relative;
+    height: 500px;
+}
+#projBus {
+    position: absolute;
+    height: 200px;
+    left: 35px;
+    top: 50px;
+}
+.cardProj3-title {
+    position: relative;
+    color: white;
+    top: 300px;
+    font-size: 36px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cardProj3-text {
+    position: relative;
+    color: white;
+    top: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* #endregion Card Three */
+
+/* #region Card Four */
+.projectCard4-container {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border: 1px gray solid;
+    top: 120%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.cardProj4-body {
+    position: relative;
+    height: 500px;
+}
+#projGithub {
+    position: absolute;
+    height: 200px;
+    left: 45px;
+    top: 45px;
+}
+.cardProj4-title {
+    position: relative;
+    color: white;
+    top: 300px;
+    font-size: 36px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cardProj4-text {
+    position: relative;
+    color: white;
+    top: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#Githubbtn {
+    position: relative;
+    left: 35%;
+}
+/* #endregion Card Four */

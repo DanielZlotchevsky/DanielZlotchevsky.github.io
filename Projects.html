@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
+    <!--#region Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta 
+    name="viewport" 
+    content='width=window-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <!--#endregion Required meta tags -->
 
-    <!-- Bootstrap CSS -->
-    
+    <!--#region Style Links-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +16,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="Global.css">
     <link rel="stylesheet" href="welcome.css">
-    <link rel="stylesheet" href="project.css">
-    <title>Daniel Zlotchevsky!</title>
+    <!--#endregion Style Links-->
+
+    <title>Daniel Zlotchevsky</title>
+
 </head>
 <body>
-  
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
+    <!--#region Header/Footer-->
     <div class="header-medium">
-      <img height="296px" src="/images/NYCSkyline2.jpg" alt="">
+        <img class="header-image" src="/images/NYCSkyline2.jpg" alt="">
     </div>
-    <!--Navigation Bar-->
+    <div class="Footer"></div>
+    <!--#endregion Header/Footer-->
+
+    <!--#region Navigation Bar-->
     <div class="topnav">
         <a class="nav active" href="https://danielzlotchevsky.github.io/">Welcome</a>
         <a class="nav" href="https://danielzlotchevsky.github.io/Projects">Projects</a>
@@ -35,7 +42,9 @@
         <a class="nav" href="#">Contact Me</a>
         <img class="logo" src="/images/Apple.png" alt="">
     </div>
-    <!--creation of the welcome message-->
+    <!--#endregion Navigation Bar-->
+    
+    <!--#region Creation of the Main message-->
     <div class="text-container">
         <span class="letter1">P</span>
         <span class="letter2">r</span>
@@ -46,14 +55,18 @@
         <span class="letter7">t</span>
         <span class="letter8">s</span>
     </div>
+    <!--#endregion Creation of the Main message-->
     
+    <!--#region Project Intro-->
     <div class="project-container">
         <div class="project-intro">
             <h1 id="header">Current Projects</h1>
             <p id="para">The current projects displayed are currently just progression projects. They were created by following a relatively loose guidline provided by <a href="https://executive-ed.xpro.mit.edu/professional-certificate-coding">MITxPro</a>. After understanding the concept of the assignment I worked to personalize each project and make them my own. Future personal endeavors will also be added here once they are ready, as well as any other interesting projects I manage to complete.</p>
         </div>
     </div>
-
+    <!--#endregion Project Intro-->
+    
+    <!--#region Project Cards-->
     <div class="projectCard1-container">
         <div class="card-container">
             <div class="cardProj1" style="width: 18rem;">
@@ -61,7 +74,7 @@
                 <div class="cardProj1-body">
                     <h5 class="cardProj1-title">PacMen</h5>
                     <p class="cardProj1-text">This progression project was made to work out systematically creating objects as well as controlling their boundries and motion.</p>
-                    <a id="Pacbtn" href="https://github.com/DanielZlotchevsky/PacMen-Exercise" class="btn btn-primary">Github</a>
+                    <a id="Pacbtn" href="https://github.com/DanielZlotchevsky/PacMen-Exercise" class="btn btn-primary">PacMen</a>
                 </div>
             </div>
         </div>
@@ -73,9 +86,35 @@
                 <div class="cardProj2-body">
                     <h5 class="cardProj2-title">Bus Tracking</h5>
                     <p class="cardProj2-text">This progression project was made to retrieve data from a third-party API, and then use said data to create a tracker. In this instance a bus tracker.</p>
-                    <a id="Busbtn" href="https://github.com/DanielZlotchevsky/Bus-Tracking" class="btn btn-primary">Github</a>
+                    <a id="Busbtn" href="https://github.com/DanielZlotchevsky/Bus-Tracking" class="btn btn-primary">Bus Tracking</a>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
-    </body>
+    <div class="projectCard3-container">
+        <div class="card-container">
+            <div class="cardProj3" style="width: 18rem;">
+                <img id="projBus" src="images/bus.png" class="card-img-top-right" alt="...">
+                <div class="cardProj3-body">
+                    <h5 class="cardProj3-title">Bus Tracking</h5>
+                    <p class="cardProj3-text">This progression project was made to retrieve data from a third-party API, and then use said data to create a tracker. In this instance a bus tracker.</p>
+                    <a id="Eyebtn" href="https://github.com/DanielZlotchevsky/Bus-Tracking" class="btn btn-primary">Eye Balls</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projectCard4-container">
+        <div class="card-container">
+            <div class="cardProj4" style="width: 18rem;">
+                <img id="projGithub" src="images/GitHub icon.png" class="card-img-top-right" alt="...">
+                <div class="cardProj4-body">
+                    <h5 class="cardProj4-title">GitHub</h5>
+                    <p class="cardProj4-text">For all of my current public work, visit my Github repositories here! Any works that are completed or being worked on will be posted here</p>
+                    <a id="Githubbtn" href="https://github.com/DanielZlotchevsky/Bus-Tracking" class="btn btn-primary">Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#endregion Project Cards-->
+    
+</body>

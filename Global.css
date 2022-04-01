@@ -1,6 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+    background: rgb(73, 73, 73);
+    height: 160vh;
+    width: 100%;
+}
+
+/*------------------------------------------Navbar------------------------------------------*/
+
+
+/* #region Navbar */
 .topnav {
     background-color: black;
     height: 60px;
+    width: 100%;
     position: relative;
     text-align: center;
 }
@@ -35,7 +51,6 @@
     transition: transform .2s ease-in-out;
 }
 
-
 .nav:hover{
     color: aqua;
     transform: translateY(-5px);
@@ -45,3 +60,597 @@
     color: white;
 }
 
+/* #endregion Navbar */
+
+
+/*------------------------------------------Footer------------------------------------------*/
+
+
+/* #region Header */
+.header {
+    position: fixed;
+    width: 100%;
+}
+.header-image {
+    position: relative;
+    width: 100%;
+}
+/* #endregion Header */
+
+/* #region Footer */
+.Footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    margin-top: 10px;
+    background-color: #000;
+    height: 30px;
+    width: 100%;
+    z-index: 1;
+}
+/* #endregion Footer */
+
+
+/*------------------------------------------Main message------------------------------------------*/
+
+
+/* #region Letters */
+.text-container {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    letter-spacing: 0px;
+    font-size: 74px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+.text-container span {
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.letter1 {
+    margin-bottom: -40px;
+    position: relative;
+    animation: text1 3s 1;
+}
+.letter2 {
+    margin-bottom: -40px;
+    position: relative;
+    animation: text2 3.2s 1;
+}
+.letter3 {
+    margin-bottom: -40px;
+    position: relative;
+    animation: text3 3.4s 1;
+}
+.letter4 {
+    margin-bottom: -40px;
+    position: relative;
+    animation: text4 3.6s 1;
+}
+.letter5 {
+    margin-bottom: -40px;
+    position: relative;
+    animation: text5 3.8s 1;
+}
+.letter6 {
+    margin-bottom: -40px;
+    position: relative;
+    animation: text6 4s 1;
+}
+.letter7 {
+    margin-bottom: -40px;
+    position: relative;
+    animation: text7 4.2s 1;
+}
+.letter8 {
+    margin-bottom: -40px;
+    position: relative;
+    animation: text8 4.4s 1;
+}
+/* #endregion letters */
+
+/* #region Keyframes */
+@keyframes text1 {
+    
+    0%{
+        opacity: 0;
+        filter: blur(10);
+        transform: translateY(-103px);
+    }
+}
+@keyframes text2 {
+    
+    0%{
+        opacity: 0;
+        filter: blur(0);
+        transform: translateY(-103px);
+    }
+}
+@keyframes text3 {
+    
+    0%{
+        opacity: 0;
+        filter: blur(0);
+        transform: translateY(-103px);
+    }
+}
+@keyframes text4 {
+    
+    0%{
+        opacity: 0;
+        filter: blur(0);
+        transform: translateY(-103px);
+    }
+}
+@keyframes text5 {
+    
+    0%{
+        opacity: 0;
+        filter: blur(0);
+        transform: translateY(-103px);
+    }
+}
+@keyframes text6 {
+    
+    0%{
+        opacity: 0;
+        filter: blur(0);
+        transform: translateY(-103px);
+    }
+}
+@keyframes text7 {
+    
+    0%{
+        opacity: 0;
+        filter: blur(0);
+        transform: translateY(-103px);
+    }
+}
+@keyframes text8 {
+    
+    0%{
+        opacity: 0;
+        filter: blur(0);
+        transform: translateY(-103px);
+    }
+}
+/* #endregion KeyFrames */
+
+
+/*------------------------------------------Intro Text to Video------------------------------------------*/
+
+
+/* #region Video Intro Text */
+.Dan-container {
+    width: 100%;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.intro0 {
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    left: -270px;
+    color: white;
+    font-size: 36px;
+    font-family: 'Secular One', sans-serif;
+    animation: intro1 2s 1;
+}
+.intro1 {
+    position: absolute;
+    color: white;
+    font-size: 36px;
+    top: -5px;
+    left: 36%;
+    animation: intro1 2s 1;
+}
+.intro2 {
+    position: absolute;
+    top: 30px;
+    left: 42%;
+    color: aqua;
+    font-size: 48px;
+    animation: intro2 2s 1;
+}
+.intro3 {
+    display: inline-block;
+        position: relative;
+        top: 25px;
+        left: 260px;
+        color: white;
+        font-size: 36px;
+        font-family: 'Secular One', sans-serif;
+        animation: intro2 2s 1;
+}
+/* #endregion Video Intro Text */
+
+/* #region Video Intro KeyFrames */
+@keyframes intro1 {
+    0%{
+        opacity: 0;
+        filter: blur(2);
+        transform: translateX(-500px);
+        
+    }
+}
+@keyframes intro2 {
+    0%{
+        opacity: 0;
+        filter: blur(2);
+        transform: translateX(500px);
+    }
+}
+/* #endregion Video Intro KeyFrames */
+
+
+/*------------------------------------------Video embedding------------------------------------------*/
+
+
+/* #region Video */
+.video {
+    position: relative;
+    top: 275px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-position: center;
+}
+/* #endregion Video */
+
+
+/*------------------------------------------Welcome Page Cards------------------------------------------*/
+
+
+/* #region Card One */
+.card-container {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border: 1px gray solid;
+    top: 128%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+
+#pacman {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+}
+
+#bus {
+    position: relative;
+    height: 200px;
+    width: auto;
+    top: 100px;
+    left: 50.5px;
+    
+}
+
+.card-body {
+    position: abso;
+    height: 300px;
+    border-top: 50%;
+}
+.card-title {
+    position: relative;
+    font-size: 36px;
+    color: white;
+    top: 100px;
+}
+.card-text {
+    position: relative;
+    color: white;
+    top: 100px;
+}
+.card-body a {
+    position: relative;
+    background-color: aqua;
+    color: gray;
+    top: 100px;
+    text-align: center;
+    left: 25%;
+}
+/* #endregion Card One */
+
+/* #region Card Two */
+.card2-container {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border: 1px gray solid;
+    top: 128%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.card2 {
+    height: 500px;
+}
+
+.lang-icons {
+    position: relative;
+    height: 60px;
+    width: 60px;
+}
+
+.card2-title {
+    position: relative;
+    font-size: 36px;
+    height: -40px;
+    margin-left: 15px;
+    color: white;
+    top: 177.5px;
+}
+
+.card2-text {
+    position: absolute;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    top: 365px;
+}
+
+#HTML-icon {
+    top: 40px;
+    left: 25px;
+    height: 90px;
+    width: 90px;
+    animation: rotating 3s infinite;
+}
+#CSS-icon {
+    top: 40px;
+    left: 80px;
+    height: 90px;
+    width: 90px;
+    animation: rotating 3s infinite;
+}
+#JS-icon {
+    top: 170px;
+    left: -82.5px;
+    height: 90px;
+    width: 80px;
+    animation: rotating 3s infinite;
+}
+/* #endregion Card Two */
+
+/* #region Card Two Keyframes */
+@keyframes rotating {
+    from {
+        -ms-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    to {
+        -ms-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+/* #endregion Card Two Keyframes */
+
+/* #region Card Three */
+.card3-container {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border: 1px gray solid;
+    top: 128%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card3-title {
+    position: relative;
+    font-size: 36px;
+    color: white;
+    top: 500px;
+}
+/* #endregion Card Three */
+
+
+/*------------------------------------------Project Intro message------------------------------------------*/
+
+
+/* #region Project Intro */
+.project-container {
+    position: absolute; 
+    width: 50%;
+    top: 45%;
+    left: 25%;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.project-intro {
+    position: relative;
+    color: white;
+}
+#header {
+    position: relative;
+    left: 22.5%;
+    font-size: 76px;
+}
+#para {
+    font-size: 24px;
+}
+/* #endregion Project Intro */
+
+
+/*------------------------------------------Project cards------------------------------------------*/
+
+
+/* #region Card One */
+.projectCard1-container {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border: 1px gray solid;
+    top: 120%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.cardProj1-body {
+    position: relative;
+    height: 500px;
+
+}
+#projPac {
+    position: absolute;
+    height: 200px;
+    left: 50px;
+    top: 50px;
+}
+.cardProj1-title {
+    position: relative;
+    color: white;
+    top: 300px;
+    font-size: 36px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cardProj1-text {
+    position: relative;
+    color: white;
+    top: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.btn {
+    position: relative;
+    top: 295px;
+    left: 25%;
+    margin-bottom: 5px;
+}
+/* #endregion Card One */
+
+/* #region Card Two */
+.projectCard2-container {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border: 1px gray solid;
+    top: 120%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.cardProj2-body {
+    position: relative;
+    height: 500px;
+}
+#projBus {
+    position: absolute;
+    height: 200px;
+    left: 35px;
+    top: 50px;
+}
+.cardProj2-title {
+    position: relative;
+    color: white;
+    top: 300px;
+    font-size: 36px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cardProj2-text {
+    position: relative;
+    color: white;
+    top: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#Busbtn {
+    left: 25%;
+}
+/* #endregion Card Two */
+
+/* #region Card Three */
+.projectCard3-container {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border: 1px gray solid;
+    top: 120%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.cardProj3-body {
+    position: relative;
+    height: 500px;
+}
+#projOwl {
+    position: absolute;
+    height: 200px;
+    left: 30px;
+    top: 50px;
+}
+.cardProj3-title {
+    position: relative;
+    color: white;
+    top: 300px;
+    font-size: 36px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cardProj3-text {
+    position: relative;
+    color: white;
+    top: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* #endregion Card Three */
+
+/* #region Card Four */
+.projectCard4-container {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border: 1px gray solid;
+    top: 120%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.cardProj4-body {
+    position: relative;
+    height: 500px;
+}
+#projGithub {
+    position: absolute;
+    height: 200px;
+    left: 45px;
+    top: 45px;
+}
+.cardProj4-title {
+    position: relative;
+    color: white;
+    top: 300px;
+    font-size: 36px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cardProj4-text {
+    position: relative;
+    color: white;
+    top: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#Githubbtn {
+    position: relative;
+    left: 35%;
+}
+/* #endregion Card Four */

@@ -63,7 +63,7 @@ body {
 /* #endregion Navbar */
 
 
-/*------------------------------------------Footer------------------------------------------*/
+/*------------------------------------------Footer/Header------------------------------------------*/
 
 
 /* #region Header */
@@ -87,6 +87,8 @@ body {
     height: 30px;
     width: 100%;
     z-index: 1;
+    text-align: center;
+    color: white;
 }
 /* #endregion Footer */
 

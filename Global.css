@@ -491,6 +491,9 @@ body {
 /* #region Project Intro */
 .project-container {
     position: absolute; 
+    background-color: rgb(31, 31, 31);
+    padding-left: 60px;
+    padding-right: 60px;
     width: 50%;
     top: 45%;
     left: 25%;
@@ -676,3 +679,42 @@ body {
     left: 35%;
 }
 /* #endregion Card Four */
+
+
+/*------------------------------------------About me Intro------------------------------------------*/
+
+/* #region About Me Body */
+.AboutMeBody {
+    height: 100vh;
+}
+
+/* #region AboutMe Intro */
+.AboutMe-container {
+    position: absolute; 
+    background-color: rgb(31, 31, 31);
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 50%;
+    top: 45%;
+    left: 25%;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.AboutMe-intro {
+    position: relative;
+    color: white;
+}
+#header {
+    position: relative;
+    left: 22.5%;
+    font-size: 76px;
+}
+#para {
+    font-size: 24px;
+}
+/* #endregion AboutMe Intro */
+
+
+
+
+
+

@@ -460,6 +460,13 @@ body {
     height: 500px;
 }
 
+.headshot {
+    position: absolute;
+    margin: 20px;
+    height: 220px;
+    width: 220px;
+    left: 15px;
+}
 .card3-title {
     position: relative;
     font-size: 36px;
